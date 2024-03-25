@@ -22,6 +22,36 @@ import { SectionTab } from "polotno/side-panel";
 import MdPhotoLibrary from "@meronex/icons/md/MdPhotoLibrary";
 
 import { createStore } from "polotno/model/store";
+import { setTranslations } from "polotno/config";
+import { getTranslations } from "polotno/config";
+setTranslations({
+  sidePanel: {
+    text: "Texto",
+    createHeader: "Título",
+    subHeaderText: "Subtítulo",
+    createSubHeader: "Subtítulo",
+    createBody: "Texto simples",
+    myFonts: "Minhas Fontes",
+    elements: "Elementos",
+    lines: "Linhas",
+    shapes: "Formas",
+    searchPlaceholder: "Procurar...",
+    layers: "Camadas",
+    layersTip: "Elementos ativos na sua arte:",
+    noLayers: "Nenhum elemento ativo...",
+    uploadTip: "Quer enviar suas próprias imagens?",
+    noResults: "Nenhum resultado",
+    "uploadImage": "Carregar imagem",
+  },
+  toolbar: {
+    zoomIn: "Mais zoom",
+    zoomOut: "Menos zoom",
+    resetZoom: "Zoom normal",
+    position: "Camada",
+    transparency: "Transparencia",
+  },
+});
+console.log(getTranslations());
 
 const store = createStore({
   key: "dRKuSk2VVB8YSm0i6Vdx",
